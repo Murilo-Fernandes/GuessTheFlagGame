@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaFinal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txtFlagGame2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#7C0FDBF6"
+            android:gravity="center"
+            android:text="Flag Game"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtFinal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="PARABÉNS! VOCÊ CHEGOU AO FINAL!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtContAcertos"
+                    android:layout_width="189dp"
+                    android:layout_height="185dp"
+                    android:background="#668A8383"
+                    android:gravity="center"
+                    android:text="ACERTOS:"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalAcertos"
+                    android:layout_width="219dp"
+                    android:layout_height="185dp"
+                    android:background="#F2F2F2"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="34sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="224dp">
+
+                <Button
+                    android:id="@+id/btnAgain"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="209dp"
+                    android:layout_height="104dp"
+                    android:text="RESPONDER NOVAMENTE" />
+
+                <Button
+                    android:id="@+id/btnMainPage"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#9C27B0"
+                    android:backgroundTintMode="src_over"
+                    android:text="TELA PRINCIPAL" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaQuiz10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtFlagGame"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#7C0FDBF6"
+            android:gravity="center"
+            android:text="Flag Game"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#9E631FDB"
+            android:gravity="center"
+            android:text="Que país é esse? 10/10"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            app:srcCompat="@drawable/img_15" />
+
+        <RadioGroup
+            android:id="@+id/rgOptions"
+            android:layout_width="match_parent"
+            android:layout_height="196dp">
+
+            <RadioButton
+                android:id="@+id/rbRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="false"
+                android:text="Brasil" />
+
+            <RadioButton
+                android:id="@+id/rbWrong1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portugal" />
+
+            <RadioButton
+                android:id="@+id/rbWrong3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angola" />
+
+            <RadioButton
+                android:id="@+id/rbWrong2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Argentina" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAnswer"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#64C34A"
+            android:text="RESPONDER" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
